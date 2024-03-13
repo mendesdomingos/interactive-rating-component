@@ -91,7 +91,8 @@ p {
   height: 38px;
   border-radius: 50%;
   background-color: hsl(213, 20%, 18%);
-  z-index: -1; /* Coloca o círculo atrás da estrela */
+  z-index: -1;
+  /* Coloca o círculo atrás da estrela */
 }
 
 .image1 {
@@ -99,5 +100,31 @@ p {
   left: 15%;
   top: 15%;
   transform: translate(-50%, -50%);
-  z-index: 0; /* Garante que a estrela fique na frente do círculo */
+  z-index: 0;
+  /* Garante que a estrela fique na frente do círculo */
+}
+
+.image2 {
+  width: 130px;
+}
+
+.retangle {
+  width: 160px;
+  height: 35px;
+  background-color: hsl(213, 20%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2.5em;
+}
+.retangle #response {
+  color: hsl(25, 97%, 53%);
+  font-size: 0.8rem;
+}
+
+.anotherText {
+  text-align: center;
+}
+.anotherText p {
+  margin-top: 10px;
 }

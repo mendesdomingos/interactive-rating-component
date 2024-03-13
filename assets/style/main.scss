@@ -62,6 +62,7 @@ p {
 .buttons {
     display: flex;
     gap: 15px;
+
     button {
         padding: 15px 20px;
         border-radius: 50%;
@@ -107,7 +108,8 @@ p {
     height: 38px;
     border-radius: 50%;
     background-color: $Dark-Blue;
-    z-index: -1; /* Coloca o círculo atrás da estrela */
+    z-index: -1;
+    /* Coloca o círculo atrás da estrela */
 }
 
 .image1 {
@@ -115,5 +117,35 @@ p {
     left: 15%;
     top: 15%;
     transform: translate(-50%, -50%);
-    z-index: 0; /* Garante que a estrela fique na frente do círculo */
+    z-index: 0;
+    /* Garante que a estrela fique na frente do círculo */
+}
+
+// Page 2
+
+.image2 {
+    width: 130px;
+}
+
+.retangle {
+    width: 160px;
+    height: 35px;
+    background-color: $Dark-Blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2.5em;
+
+    #response {
+        color: $Orange;
+        font-size: 0.8rem;
+    }
+}
+
+.anotherText {
+    text-align: center;
+
+    p {
+        margin-top: 10px;
+    }
 }

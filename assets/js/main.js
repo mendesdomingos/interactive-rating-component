@@ -18,15 +18,23 @@ buttons.forEach(button => {
 
 
 function submit() {
-    window.location.href = './assets/pages/page2.html';
-};
+    // Verifica se pelo menos um botão está selecionado
+    const selectedButton = document.querySelector('.btn.active');
+    if (selectedButton) {
+        // Se pelo menos um botão estiver selecionado, realiza o envio
+        window.location.href = './assets/pages/result.html';
+    } else {
+        // Se nenhum botão estiver selecionado, não faz nada ou exibe uma mensagem de erro
+        console.log("Por favor, selecione uma opção antes de enviar.");
+    }
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    
+document.addEventListener('DOMContentLoaded', function () {
+
     const rating = localStorage.getItem('rating');
     const outputResponse = document.getElementById('response');
 
     if (outputResponse && rating !== null) {
-        outputResponse.textContent = `It's ${rating}`;
+        outputResponse.textContent = `You selected ${rating} out of 5`;
     }
 });
