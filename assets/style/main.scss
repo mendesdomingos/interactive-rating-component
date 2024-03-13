@@ -1,3 +1,41 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Variables
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 20%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Button Effect
 .btn.active {
     background-color: aqua;
+}
+
+body {
+    background-color: $Very-Dark-Blue;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .card {
+        width: 350px;
+        height: 350px;
+        background-image: linear-gradient(180deg, $Dark-Blue, $Very-Dark-Blue 150%);
+        border-radius: 2em;
+        box-shadow: 0px 2px 20px hsla(0, 0%, 0%, 0.105);
+    }
 }

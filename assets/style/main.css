@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .btn.active {
   background-color: aqua;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+main .card {
+  width: 350px;
+  height: 350px;
+  background-image: linear-gradient(180deg, hsl(213, 20%, 18%), hsl(216, 12%, 8%) 150%);
+  border-radius: 2em;
+  box-shadow: 0px 2px 20px hsla(0, 0%, 0%, 0.105);
 }
